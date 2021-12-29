@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="#fff"
+        android:translationZ="1dp">
+
+        <Button
+            android:id="@+id/total_food"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.074"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:drawableLeft="@drawable/food"
+            android:text="美食"
+            android:textColor="#000"
+            android:background="@drawable/map_btn2"></Button>
+
+
+        <Button
+            android:id="@+id/total_play"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/map_btn2"
+            android:drawableLeft="@drawable/play2"
+            android:text="玩乐"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></Button>
+
+        <Button
+            android:id="@+id/total_scenery"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/map_btn2"
+            android:drawableLeft="@drawable/buy3"
+            android:text="购物"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/total_Zoo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </com.baidu.mapapi.map.MapView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

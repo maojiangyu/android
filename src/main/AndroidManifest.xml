@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.travel">
+    <!-- 访问网络，进行地图相关业务数据请求，包括地图数据，路线规划，POI检索等 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取网络状态，根据网络状态切换进行数据请求网络转换 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 读取外置存储。如果开发者使用了so动态加载功能并且把so文件放在了外置存储区域，则需要申请该权限，否则不需要 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 写外置存储。如果开发者使用了离线地图，并且数据写在外置存储区域，则需要申请该权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Demoapplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomePage.notifications.UploadActivity"></activity>
+
+        <activity android:name=".HomePage.notifications.SettingActivity" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="aNESvdGgHtLNQTn8efm2ucwyyjBe7Bgz" />
+        <activity android:name=".ClickedActivity"></activity>
+        <activity android:name=".HomePage.home.SceneryInfoActivity" />
+        <activity android:name=".HomePage.home.ChangCheng" />
+        <activity android:name=".HomePage.home.XiXi" />
+        <activity android:name=".HomePage.home.XiXiMap" />
+        <activity android:name=".HomePage.home.XiXiInformation" />
+        <activity android:name=".HomePage.home.LingYin" />
+        <activity android:name=".HomePage.home.LinYinInformation" />
+        <activity android:name=".HomePage.home.LinYinMap" />
+        <activity android:name=".HomePage.home.Rank" />
+        <activity android:name=".HomePage.home.ZooInformation" />
+        <activity android:name=".HomePage.home.Zoo" />
+        <activity android:name=".HomePage.home.ZooMap" />
+        <activity android:name=".HomePage.home.GuGongInformation" />
+        <activity android:name=".HomePage.home.GuGong" />
+        <activity android:name=".HomePage.home.GuGongMap" />
+        <activity android:name=".HomePage.home.TianAnMenInformation" />
+        <activity android:name=".HomePage.home.TianAnMen" />
+        <activity android:name=".HomePage.home.TianAnMenMap" />
+        <activity android:name=".HomePage.home.ChangChengInformation" />
+        <activity android:name=".HomePage.home.ChangChengMap" />
+        <activity android:name=".HomePage.home.Record"></activity>
+        <activity
+            android:name=".HomePage.home.DialogOne"
+            android:theme="@style/DialogStyle"
+            android:label="">
+            <intent-filter>
+                <action android:name="dialog" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".RegisterPage.RegisterActivity" />
+        <activity android:name=".LoginPage.LoginActivity">
+
+        </activity>
+        <activity android:name=".GuideViewPage.GuideViewActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+
+        </activity>
+    </application>
+
+</manifest>

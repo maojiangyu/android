@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="styleColor" format="color|reference" ></attr>
+    <attr name="styleColor2" format="color|reference" ></attr>
+    <attr name="redText" format="color|reference"></attr>
+    <attr name="tittleText" format="color|reference"></attr>
+    <attr name="title_layout" format="color|reference"></attr>
+    <attr name="no_data" format="color|reference"></attr>
+    <attr name="primary_text" format="color|reference"></attr>
+    <attr name="second_text" format="color|reference"></attr>
+    <attr name="second_bg" format="color|reference"></attr>
+
+
+</resources>

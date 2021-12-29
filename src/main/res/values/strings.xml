@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Travel</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">好景共赏</string>
+    <string name="title_dashboard">我的圈子</string>
+    <string name="title_notifications">个人中心</string>
+    <string name="skip"><u>跳过</u></string>
+</resources>
